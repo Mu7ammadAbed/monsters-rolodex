@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import CardList from "./Components/card-list/card-list.component";
 
 class App extends Component {
   state = {
@@ -13,9 +14,10 @@ class App extends Component {
   }
 
   render() {
+    const { monsters } = this.state;
     return (
       <div className="App">
-        <h1>Welcome to my new project</h1>
+        <CardList list={monsters} />
       </div>
     );
   }
