@@ -6,7 +6,7 @@ const Search = (props) => {
   return (
     <input
       type="search"
-      placeholder="Type your monster name"
+      placeholder="Type your monster name here"
       className="search"
       onChange={props.handleChange}
     />
